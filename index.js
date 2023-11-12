@@ -25,7 +25,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://product-transction-project.netlify.app/",
+      "https://product-transction-project.netlify.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
