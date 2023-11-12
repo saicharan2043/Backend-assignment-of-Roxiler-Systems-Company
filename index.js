@@ -21,15 +21,7 @@ dotenv.config({
   path: "./data/config.env",
 });
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://product-transction-project.netlify.app",
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+app.use(cors());
 
 app.get("/getdata", async (request, response) => {
   const dataResponse = await fetch(
